@@ -196,7 +196,7 @@ int main(int argc, char **argv) {
         inadd2[i] = one;
     for (i = 0; i < ni; i++)
         for (j = 0; j < d; j++)
-            for (k = 0; k < qu; k++)
+            for (k = 0; k < qu*nu; k++)
                 ADDCircuit(&garbledCircuit, &garblingContext, ie*2, inadd2, outadd2);
     
     //report output;
