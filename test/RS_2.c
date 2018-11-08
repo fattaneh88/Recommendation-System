@@ -53,7 +53,6 @@ int main(int argc, char **argv) {
     createEmptyGarbledCircuit(&garbledCircuit, n, m, q, r, inputLabels);
     startBuilding(&garbledCircuit, &garblingContext);
     
-    //all inputs in order of A, B, C, D
     int zero = fixedZeroWire(&garbledCircuit, &garblingContext);
     int one = fixedOneWire(&garbledCircuit, &garblingContext);
     int inp[n];
